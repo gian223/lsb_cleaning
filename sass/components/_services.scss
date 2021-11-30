@@ -1,0 +1,164 @@
+.section-services{
+
+    &__image{
+        position: relative;
+        width: 100%;
+        max-height: 200px !important;
+        box-shadow: .5rem 1rem 1rem rgba($color: $color-black, $alpha: 0.1);
+        &--text{
+            opacity: 0.8;
+            font-weight: 500;
+            position: absolute;
+            bottom: 1.5rem;
+            right:1rem;
+            font-size: 2.5rem;
+            display: block;
+            padding: 1rem;
+            background-color: $color-white;
+            border-radius: 3px;
+        }
+    }
+
+    .card{
+        background-color: $color-grey-light-1;
+        display: block;
+        cursor: pointer;
+        transition: all .3s;
+        margin-bottom: 8rem;
+        @media(max-width: 850px){
+            border: 2px solid grey;
+        }
+
+        &:hover{
+            transform: translateY(-.8rem);
+        }
+
+        &__header{
+            display: block;
+            height: 22rem;
+            position: relative;
+            @media(max-width: 1100px){
+                height: 20rem;
+            }
+            @media(max-width: 950px){
+                height: 18rem;
+            }
+            @media(max-width: 850px){
+                height: 30rem;
+            }
+            @media(max-width: 480px){
+                height: 25rem;
+            }
+            @media(max-width: 410px){
+                height: 22rem;
+            }
+
+            &--span {
+                padding: 1rem 1.5rem;
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 400;
+                -webkit-box-decoration-break: clone;
+                box-decoration-break: clone;
+                top: 16rem;
+                right: .5rem;
+                position: absolute;
+                z-index: 10;
+                @media(max-width: 950px){
+                    top: 14rem;
+                    font-size: 1.5rem;
+                }
+                @media(max-width: 850px){
+                    font-size: 2rem;
+                    margin-top: 10rem;
+                }
+                @media(max-width: 480px){
+                    margin-top: 5rem;
+                }
+                @media(max-width: 410px){
+                    margin-top: 2rem;
+                }
+
+                &--1{
+                    background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-light, .85));
+                }
+                &--2{
+                    background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-light, .85));
+                }
+                &--3{
+                    background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-light, .85));
+                }
+            }
+
+            &--1{
+                background-image: url(../img/services/home-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &--2{
+                background-image: url(../img/services/office-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &--3{
+                background-image: url(../img/servicesbathroom-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &--4{
+                background-image: url(../img/servicesbathroom-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &--5{
+                background-image: url(../img/servicesbathroom-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &--6{
+                background-image: url(../img/servicesbathroom-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &--7{
+                background-image: url(../img/servicesbathroom-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &--8{
+                background-image: url(../img/servicesbathroom-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            &--9{
+                background-image: url(../img/servicesbathroom-cleaning-service.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+
+        &__content{
+            padding-top: 1rem;
+
+            &--list{
+                display: block;
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+                color: $color-grey-dark-6;
+                font-size: 1.7rem;
+                list-style: none;
+            }
+
+            &--item{
+                padding: .5rem 0;
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+                &:last-child{
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.heading-primary{
+    color: $color-white;
+    backface-visibility: hidden;
+    //transition: all .5s;
+    //animation-name: moveInLeft;
+    //animation-duration: 2s;
+    //animation-timing-function: ease-out;
+
+    &--main{
+      text-transform: uppercase;
+        display: block;
+        font-size: 4.5rem;
+        font-weight: 500;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        animation-name: moveInRight;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        @media(max-width: 850px){
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.heading-secondary{
+    color: $color-grey-dark-7;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+
+    &--white{
+        color: $color-white !important;
+    }
+}
+
+.heading-tertiary{
+    color: $color-grey-dark-5;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    font-size: 1.9rem;
+    display: block;
+
+    &-center{
+        @media(max-width: 1200px){
+            text-align: center;
+        }
+    }
+}
+
+input[type=text],input[type=email], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    // background-color: #4CAF50;
+    background-color: $color-orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }

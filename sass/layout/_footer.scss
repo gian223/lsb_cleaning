@@ -1,0 +1,65 @@
+.footer{
+    background-image: linear-gradient(to right bottom, rgba($color-grey-dark-3, .55), rgba($color-grey-dark-4, .85));
+    padding: 5rem 4rem;
+
+    &__header{
+        color: $color-white-2;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        font-size: 1.9rem;
+        display: block;
+        padding: 1rem 0;
+        border-bottom: 2px solid rgba($color-white-2, .85);
+    }
+
+    &__bottom-bar{
+        text-align: center;
+        color: $color-white;
+        height:5rem;
+        position: absolute;
+        background-image: linear-gradient(to right bottom, rgba($color-grey-dark-6, .85), rgba($color-grey-dark-7, .85));
+        width: 100%;
+        left: 0;
+        padding-top: 1.2rem;
+    }
+
+    &__about{
+
+        &--list{
+            list-style: none;
+            padding: 2rem 1rem;
+        }
+
+        &--item{
+            font-size: 2rem;
+            color: $color-grey-light-2;
+            text-decoration: none;
+        }
+    }
+
+    &__navigation{
+
+        &--list{
+            list-style: none;
+            padding: 2rem 1rem;
+        }
+
+        &--special{
+            color: $color-orange !important;
+        }
+
+        &--item{
+
+            &:link,
+            &:visited{
+                font-size: 2rem;
+                color: $color-white-2;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(209, 209, 209, 0.1);
+                width: 100%;
+                padding-bottom: .5rem;
+                display: block;
+            }
+        }
+    }
+}

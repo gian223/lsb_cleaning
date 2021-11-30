@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 55.5%; // 10px, this defines 1rem. 10px/16px = 62.5%
+}
+
+body{
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-grey-dark-3;
+    font-family: 'Roboto', sans-serif;
+}
+
+

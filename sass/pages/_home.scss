@@ -1,0 +1,43 @@
+.section-about{
+    background-color: $color-grey-light-1;
+    margin-top:-11rem;
+    padding: 15rem 0;
+    @media(max-width: 1200px){
+        padding: 15rem 4rem 15rem 4rem;
+    }
+    @media(max-width: 500px){
+        padding: 15rem 2rem 15rem 2rem;
+    }
+    
+}
+
+.section-services{
+
+    margin-top: -2.5rem;
+    padding: 10rem 4rem;
+    // background-color: $color-grey-light-2;
+    // background-image: linear-gradient(to right bottom, rgba($color-grey-dark-2, 0.4), rgba($color-grey-dark-5, 0.4)) , url(../img/exterior-plastering-work.jpg);
+    background-color: white;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transform: skewY(-2deg);
+
+    & > * {
+        transform: skewY(2deg);
+    }
+    position: relative;
+
+    z-index: 2;
+}
+
+
+
+.section-work{
+    background-color: $color-grey-light-1;
+    
+    padding: 10rem 4rem;
+    margin-top: -2.6rem;
+}

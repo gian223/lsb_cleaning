@@ -1,0 +1,32 @@
+.header{
+    height:90vh;
+    background-image: linear-gradient(to right bottom, rgba($color-grey-dark, 0.1), rgba($color-grey-dark-2, 0.1)) , url(../img/slide-33.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    //&__logo{
+    //    position: absolute;
+    //    top: 40px;
+    //    left: 40px;
+    //}
+
+    &__text{
+         width: 40%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        @media(max-width: 1400px){
+            width: 700px !important;
+        }
+        @media(max-width: 700px){
+            width: 90% !important;
+        }
+    }
+
+}
