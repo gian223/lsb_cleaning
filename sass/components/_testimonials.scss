@@ -1,0 +1,33 @@
+.section-testimonials {
+
+  &__container {
+    width: 100%;
+    border: 1px solid silver;
+    padding: 2rem;
+  }
+
+  &__text {
+
+  }
+
+  &__review {
+    color: green;
+    margin-top: 2rem !important;
+
+    &--name {
+      color: $color-blue;
+      display: block;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+
+    i {
+      color: gold !important;
+    }
+
+    img {
+      margin-top: -.8rem !important;
+    }
+  }
+
+}

@@ -33,9 +33,10 @@
     color: $color-grey-dark-7;
     text-transform: uppercase;
     backface-visibility: hidden;
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: block;
     text-align: center;
+    letter-spacing: .5rem;
 
     &--white{
         color: $color-white !important;

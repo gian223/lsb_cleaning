@@ -39,6 +39,12 @@
         padding: .2rem 1rem !important;
         font-size: 1.5rem;
     }
+    &--blue-large{
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        padding: .9rem 1rem !important;
+        font-size: 1.5rem;
+    }
 
     &--orange{
         background-color: $color-orange;
