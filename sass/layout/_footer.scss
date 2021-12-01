@@ -1,9 +1,10 @@
 .footer{
-    background-image: linear-gradient(to right bottom, rgba($color-grey-dark-3, .55), rgba($color-grey-dark-4, .85));
-    padding: 5rem 4rem;
+    background-image: linear-gradient(to right bottom, rgba($color-white-2, .55), rgba($color-white-2, .85));
+    padding: 3rem 0 0 0;
+    margin-top: 5rem;
 
     &__header{
-        color: $color-white-2;
+        color: $color-grey-dark;
         text-transform: uppercase;
         backface-visibility: hidden;
         font-size: 1.9rem;
@@ -12,16 +13,7 @@
         border-bottom: 2px solid rgba($color-white-2, .85);
     }
 
-    &__bottom-bar{
-        text-align: center;
-        color: $color-white;
-        height:5rem;
-        position: absolute;
-        background-image: linear-gradient(to right bottom, rgba($color-grey-dark-6, .85), rgba($color-grey-dark-7, .85));
-        width: 100%;
-        left: 0;
-        padding-top: 1.2rem;
-    }
+
 
     &__about{
 
@@ -32,7 +24,7 @@
 
         &--item{
             font-size: 2rem;
-            color: $color-grey-light-2;
+            color: $color-grey-dark;
             text-decoration: none;
         }
     }
@@ -41,7 +33,6 @@
 
         &--list{
             list-style: none;
-            padding: 2rem 1rem;
         }
 
         &--special{
@@ -50,10 +41,12 @@
 
         &--item{
 
+        }
+        &--link{
             &:link,
             &:visited{
                 font-size: 2rem;
-                color: $color-white-2;
+                color: $color-grey-dark;
                 text-decoration: none;
                 border-bottom: 1px solid rgba(209, 209, 209, 0.1);
                 width: 100%;
@@ -62,4 +55,15 @@
             }
         }
     }
+}
+
+.bottom-bar{
+    text-align: center;
+    color: $color-white;
+    height:5rem;
+    //position: absolute;
+    background-image: linear-gradient(to right bottom, rgba($color-grey-dark-6, .85), rgba($color-grey-dark-7, .85));
+    width: 100%;
+    left: 0;
+    padding-top: 1.2rem;
 }
