@@ -1,4 +1,4 @@
-.row{
+.row {
     max-width: 140rem;
     margin: 0 auto;
     position: relative;
@@ -12,96 +12,120 @@
     //         width: 100%;
     //         display: block;
     //     }
-        
-        
+
+
     // }
 
-    
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
 
 
     @include clearfix;
 
-    [class^="col-"]{
+    [class^="col-"] {
         float: left;
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: $gutter-horizontial;
         }
 
 
     }
 
-    .col-1-of-1{
+    .col-1-of-1 {
         width: calc((100% - #{$gutter-horizontial}) / 1);
     }
 
-    .col-1-of-2{
+    .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontial}) / 2);
-        @media(max-width: 750px){
+        position: relative;
+        @media(max-width: 750px) {
             width: 100%;
             margin-bottom: 2rem;
         }
     }
 
-    .col-1-of-2-about{
+    .col-1-of-2-about {
         width: calc((100% - #{$gutter-horizontial}) / 2);
-        @media(max-width: 1200px){
+        @media(max-width: 1200px) {
             width: 100%;
             margin-bottom: 5rem;
         }
     }
-    .col-1-of-2-about-break{
+
+    .col-1-of-2-about-break {
         width: calc((100% - #{$gutter-horizontial}) / 2);
         margin-bottom: 5rem;
-        @media(max-width: 445px){
+        @media(max-width: 445px) {
             width: 90%;
             padding-left: 4rem;
         }
     }
-    .col-1-of-2-about-desc{
+
+    .col-1-of-2-about-desc {
         width: calc((100% - #{$gutter-horizontial}) / 2);
-        @media(max-width: 1200px){
+        @media(max-width: 1200px) {
             width: 100%;
         }
     }
-    
 
-    .col-1-of-3{
+
+    .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontial}) / 3);
         position: relative;
         margin-bottom: 6rem;
-        &:nth-child(3n){
+
+        &:nth-child(3n) {
             margin-right: 0;
         }
-        @media(max-width: 850px){
+
+        @media(max-width: 850px) {
             width: 100%;
             margin-bottom: 2rem;
         }
     }
 
-    .col-2-of-3{
+    .col-2-of-3 {
         width: calc(2 * ((100% - 2 * #{$gutter-horizontial}) / 3) + #{$gutter-horizontial});
     }
 
-    .col-1-of-4{
+    .col-1-of-4 {
         width: calc((100% - 3 * #{$gutter-horizontial}) / 4);
+        @media(max-width: 950px) {
+            width: calc((100% - #{$gutter-horizontial}) / 2);
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+    }
+    .col-1-of-4-services {
+        position: relative;
+        margin-bottom: 4rem;
+        width: calc((100% - 3 * #{$gutter-horizontial}) / 4);
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        @media(max-width: 950px) {
+            width: calc((100% - #{$gutter-horizontial}) / 2);
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
     }
 
-    .col-2-of-4{
+    .col-2-of-4 {
         width: calc(2 * ((100% - 3 * #{$gutter-horizontial}) / 4) + #{$gutter-horizontial});
     }
 
-    .col-3-of-4{
+    .col-3-of-4 {
         width: calc(3 * ((100% - 3 * #{$gutter-horizontial}) / 4) + 2 * #{$gutter-horizontial});
     }
-    .col-4-of-4{
+
+    .col-4-of-4 {
         width: calc(4 * ((100% - 3 * #{$gutter-horizontial}) / 4) + 3 * #{$gutter-horizontial});
     }
 
-    
 
 }

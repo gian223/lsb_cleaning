@@ -1,29 +1,32 @@
-.section-team{
+.section-team {
 
-  &__container{
-    width: 100%;
-  }
-  &__image{
-    //width: 100%;
-    border: 3px solid white;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-  }
-  &__name{
-    color: $color-blue;
-    display: block;
-    font-weight: 600;
-    font-size: 2rem;
-  }
-  &__title{
-    color: $color-grey-dark;
-    display: block;
-    font-weight: 600;
-    font-size: 2rem;
-  }
+    &__container {
+        width: 100%;
+    }
+
+    &__image {
+        width: 70%;
+        border: 3px solid white;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+    }
+
+    &__name {
+        color: $color-blue;
+        display: block;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    &__title {
+        color: $color-grey-dark;
+        display: block;
+        font-weight: 600;
+        font-size: 2rem;
+    }
 
 
-  &__description{
+    &__description {
 
-  }
+    }
 
 }

@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:&display=swap" rel="stylesheet">
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="css/icon-styles.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/about/interior-plasterer.png">
@@ -51,16 +51,22 @@
                     <a href="#" class="navigation__link navigation__link-services">Services</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link navigation__link-work">Testimonial</a>
+                    <a href="#" class="navigation__link navigation__link-work">Our Work</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link navigation__link-work">Our Team</a>
+                    <a href="#" class="navigation__link navigation__link-testimonial">Testimonials</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link navigation__link-work">Contact</a>
+                    <a href="#" class="navigation__link navigation__link-team">Our Team</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#popup" class="btn btn--blue"><i class="fas fa-bell"></i> Get A Quote</a>
+                    <a href="#" class="navigation__link navigation__link-contact">Contact</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="btn btn--blue-large contact"><i class="fas fa-bell"></i> Get A Quote</a>
+                </li>
+                <li class="navigation__item navigation__item--hidden">
+                    <a href="tel:02108577660" class="btn btn--green-large"><i class="fas fa-phone"></i></a>
                 </li>
             </ul>
         </nav>
@@ -81,17 +87,22 @@
                 <a href="#" class="navigation-small__link navigation__link-home">Home</a>
             </li>
             <li class="navigation-small__item">
-                <a href="#" class="navigation-small__link navigation__link-about">About Us</a>
+                <a href="#" class="navigation-small__link navigation__link-about">About</a>
             </li>
             <li class="navigation-small__item">
-                <a href="#" class="navigation-small__link navigation__link-services">Our Services</a></li>
-            <li class="navigation-small__item">
-                <a href="#" class="navigation-small__link navigation__link-work">Our Work</a></li>
-            <li class="navigation-small__item">
-                <a href="#popup" class="navigation-small__link">Contact Us</a>
+                <a href="#" class="navigation-small__link navigation__link-services">Services</a>
             </li>
             <li class="navigation-small__item">
-                <a href="#popup" class="navigation-small__link">Free Quote</a>
+                <a href="#" class="navigation-small__link navigation__link-work">Our Work</a>
+            </li>
+            <li class="navigation-small__item">
+                <a href="#" class="navigation-small__link navigation__link-testimonials">Testimonials</a>
+            </li>
+            <li class="navigation-small__item">
+                <a href="#" class="navigation-small__link navigation__link-team">Our Team</a>
+            </li>
+            <li class="navigation-small__item">
+                <a href="#" class="navigation-small__link navigation__link-contact">Contact</a>
             </li>
         </ul>
     </nav>
@@ -101,11 +112,11 @@
 <header class="header" id="section-home">
     <div class="header__text">
         <h1 class="heading-primary margin-bottom-small">
-            <span class="heading-primary&#45;&#45;sub">Nelsons #1 Cleaning Service</span>
-            <span class="heading-primary--main">So Fresh & So Clean...</span>
-            <span class="heading-primary--main">We Promise!</span>
+            <span class="heading-primary--sub" style="color:red;">Nelsons #1 Cleaning Service</span>
+            <span class="heading-primary--main" style="color:red;">So Fresh & So Clean...</span>
+            <span class="heading-primary--main" style="color:red;">We Promise!</span>
         </h1>
-        <a href="#popup" class="btn btn--white">Contact us Now <i class="fas fa-angle-double-right"></i></a>
+        <a href="#" class="btn btn--white contact">Contact us Now <i class="fas fa-angle-double-right"></i></a>
     </div>
 </header>
 
@@ -115,40 +126,38 @@
     <section class="section-about" id="section-about">
         <h1 class="heading-secondary margin-bottom-small">About Us</h1>
         <div class="row">
-            <div class="col-1-of-2-about">
-                <h1 class="heading-tertiary margin-bottom-tiny">Our Experience</h1>
                 <div class="row">
-                    <img class="section-about__image" src="img/update-banner1.jpg" alt="">
-                    <div class="section-about__image--experience">
-                        <div class="row">
-                            <div class="col-1-of-4">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <div class="col-3-of-4">
-                                12+ Years Experience
+                    <div class="col-1-of-2">
+                        <img class="section-about__image" src="img/update-banner1.jpg" alt="">
+                        <div class="section-about__image--experience">
+                            <div class="row">
+                                <div class="col-1-of-4">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="col-3-of-4">
+                                    12+ Years Experience
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-1-of-2">
+                        <h1 class="heading-tertiary heading-tertiary-center margin-bottom-tiny">
+                            Nelsons number 1 cleaning service provider.
+                        </h1>
+                        <p class="section-about__about">
+                            At LSB Cleaning we provide a superior cleaning service with customer satisfaction being our
+                            number one priority. Owned by two sisters, one with 12 years’ experience
+                            in the cleaning industry, Michaela Neale-Blandford and the other, who is passionate about
+                            business and growing a willing and trustworthy business, Stephanie Marie.
+                            <br/><br/>
+                            We both created this company based on the immense experience and dedication.
+                            As Nelson is growing bigger each year, we aim to fulfil the needs for trustworthy,
+                            well-trained cleaners for your home, your business, or your holidays home! We want to
+                            bring a new type of cleaning to Nelson, a company hat appreciates pleasing their customers
+                            by doing the thing that you might not want to do, cleaning.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-1-of-2-about-desc">
-                <h1 class="heading-tertiary heading-tertiary-center margin-bottom-tiny">
-                    Nelsons number 1 cleaning service provider.
-                </h1>
-                <p class="section-about__about">
-                    At LSB Cleaning we provide a cleaning service. Owned by two sisters, one with 12 years’ experience
-                    in the cleaning industry,
-                    Michaela Laws and the other, who is passionate about business and growing a willing and trustworthy
-                    business, Stephanie Marie.
-                    </br></br>
-                    We both created this company based on the immense experience and dedication.
-                    As Nelson is growing bigger each year, we aim to fulfil the needs for trustworthy, well-trained
-                    cleaners for your home,
-                    your business, or your holidays home! We want to bring a new type of cleaning to Nelson, a company
-                    that appreciates pleasing
-                    their customers by doing the thing that you might not want to do, cleaning.
-                </p>
-            </div>
         </div>
     </section>
 
@@ -157,86 +166,112 @@
     <section class="section-services" id="section-services">
         <h1 class="heading-secondary margin-bottom-small">Our Services</h1>
         <div class="row">
-            <div class="col-1-of-4">
-                <img class="section-services__image" src="img/services/home-cleaning-service.jpg" alt="">
-                <div class="section-services__image--text">Home Cleaning</div>
-            </div>
-            <div class="col-1-of-4">
-                <img class="section-services__image" src="img/services/office-cleaning-service.jpg" alt="">
-                <div class="section-services__image--text">Office Cleaning</div>
-            </div>
-            <div class="col-1-of-4">
-                <img class="section-services__image" src="img/services/air-b-n-b-cleaning-service.png" alt="">
-                <div class="section-services__image--text">Air BnB Cleaning</div>
-            </div>
-            <div class="col-1-of-4">
-                <img class="section-services__image" src="img/services/bathroom-cleaning-service.jpg" alt="">
-                <div class="section-services__image--text">Bathroom Cleaning</div>
+            <div class="col-1-of-1">
+                <p class="section-services__text" style="color:red;">
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-1-of-4">
+            <div class="col-1-of-4-services">
+                <img class="section-services__image" src="img/services/home-cleaning-service.jpg" alt="">
+                <div class="section-services__image--title">Home Cleaning</div>
+            </div>
+            <div class="col-1-of-4-services">
+                <img class="section-services__image" src="img/services/office-cleaning-service.jpg" alt="">
+                <div class="section-services__image--title">Office Cleaning</div>
+            </div>
+            <div class="col-1-of-4-services">
+                <img class="section-services__image" src="img/services/air-b-n-b-cleaning-service.png" alt="">
+                <div class="section-services__image--title">Air BnB Cleaning</div>
+            </div>
+            <div class="col-1-of-4-services">
+                <img class="section-services__image" src="img/services/bathroom-cleaning-service.jpg" alt="">
+                <div class="section-services__image--title">Bathroom Cleaning</div>
+            </div>
+            <div class="col-1-of-4-services">
                 <img class="section-services__image" src="img/services/kitchen-cleaning-service.jpg" alt="">
-                <div class="section-services__image--text">Kitchen Cleaning</div>
+                <div class="section-services__image--title">Kitchen Cleaning</div>
             </div>
-            <div class="col-1-of-4">
+            <div class="col-1-of-4-services">
                 <img class="section-services__image" src="img/services/holiday-home-cleaning-service.jpg" alt="">
-                <div class="section-services__image--text">Holiday Home Cleaning</div>
+                <div class="section-services__image--title">Holiday Homes</div>
             </div>
-            <div class="col-1-of-4">
+            <div class="col-1-of-4-services">
                 <img class="section-services__image" src="img/services/oven-cleaning-service.jpg" alt="">
-                <div class="section-services__image--text">Oven Cleaning</div>
+                <div class="section-services__image--title">Oven Cleaning</div>
             </div>
-            <div class="col-1-of-4">
+            <div class="col-1-of-4-services">
                 <img class="section-services__image" src="img/services/window-cleaning-service.jpg" alt="">
-                <div class="section-services__image--text">Window Cleaning</div>
+                <div class="section-services__image--title">Window Cleaning</div>
             </div>
         </div>
     </section>
 
     <!-- WORK EXAMPLE SECTION -->
     <section class="section-work" id="section-work">
-        <h1 class="heading-secondary margin-bottom-small">Our Work</h1>
+        <h1 class="heading-secondary margin-bottom-small margin-top-tiny">Our Work</h1>
+        <div class="row">
+            <div class="col-1-of-1">
+                <p class="section-work__text" style="color:red;">
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                </p>
+            </div>
+        </div>
         <div class="section-work__job-container">
             <div class="row">
                 <h1 class="heading-tertiary margin-bottom-tiny">Bathroom Cleaning Service</h1>
                 <div class="col-1-of-4">
                     Before
                     <a class="lightbox" href="#image1">
-                        <img src="img/work/shower_cleaning_example_before.jpg"/>
+                        <img src="img/work/shower_cleaning_example_before.jpg"
+                             alt="Shower cleaning example one before">
                     </a>
                     <div class="lightbox-target" id="image1">
-                        <img src="img/work/shower_cleaning_example_before.jpg">
+                        <img src="img/work/shower_cleaning_example_before.jpg"
+                             alt="Shower cleaning example one before">
                         <a class="lightbox-close" href="#noanchor"></a>
                     </div>
                 </div>
                 <div class="col-1-of-4">
                     After
                     <a class="lightbox" href="#image2">
-                        <img src="img/work/shower_cleaning_example_after.jpg"/>
+                        <img src="img/work/shower_cleaning_example_after.jpg"
+                             alt="Shower cleaning example one after">
                     </a>
                     <div class="lightbox-target" id="image2">
-                        <img src="img/work/shower_cleaning_example_after.jpg">
+                        <img src="img/work/shower_cleaning_example_after.jpg"
+                             alt="Shower cleaning example one after">
                         <a class="lightbox-close" href="#noanchor"></a>
                     </div>
                 </div>
                 <div class="col-1-of-4">
                     Before
                     <a class="lightbox" href="#image7">
-                        <img src="img/work/bathroom_cleaning_example_before.jpg"/>
+                        <img src="img/work/bathroom_cleaning_example_before.jpg"
+                             alt="Bathroom cleaning example one before">
                     </a>
-                    <div class="lightbox-target" id="image7">
-                        <img src="img/work/bathroom_cleaning_example_before.jpg">
+                    <div class="lightbox-target" id="image3">
+                        <img src="img/work/bathroom_cleaning_example_before.jpg"
+                             alt="Bathroom cleaning example one before">
                         <a class="lightbox-close" href="#noanchor"></a>
                     </div>
                 </div>
                 <div class="col-1-of-4">
                     After
                     <a class="lightbox" href="#image8">
-                        <img src="img/work/bathroom_cleaning_example_after.jpg"/>
+                        <img src="img/work/bathroom_cleaning_example_after.jpg"
+                             alt="Bathroom cleaning example one after">
                     </a>
-                    <div class="lightbox-target" id="image8">
-                        <img src="img/work/bathroom_cleaning_example_after.jpg">
+                    <div class="lightbox-target" id="image4">
+                        <img src="img/work/bathroom_cleaning_example_after.jpg"
+                             alt="Bathroom cleaning example one after">
                         <a class="lightbox-close" href="#noanchor"></a>
                     </div>
                 </div>
@@ -250,40 +285,48 @@
                 <div class="col-1-of-4">
                     Before
                     <a class="lightbox" href="#image4">
-                        <img src="img/work/oven_cleaning_example_2_before.jpg"/>
+                        <img src="img/work/oven_cleaning_example_2_before.jpg"
+                             alt="Oven cleaning example one before">
                     </a>
-                    <div class="lightbox-target" id="image4">
-                        <img src="img/work/oven_cleaning_example_2_before.jpg">
+                    <div class="lightbox-target" id="image5">
+                        <img src="img/work/oven_cleaning_example_2_before.jpg"
+                             alt="Oven cleaning example one before">
                         <a class="lightbox-close" href="#noanchor"></a>
                     </div>
                 </div>
                 <div class="col-1-of-4">
                     After
                     <a class="lightbox" href="#image5">
-                        <img src="img/work/oven_cleaning_example_2_after.jpg"/>
+                        <img src="img/work/oven_cleaning_example_2_after.jpg"
+                             alt="Oven cleaning example one after">
                     </a>
-                    <div class="lightbox-target" id="image5">
-                        <img src="img/work/oven_cleaning_example_2_after.jpg">
+                    <div class="lightbox-target" id="image6">
+                        <img src="img/work/oven_cleaning_example_2_after.jpg"
+                             alt="Oven cleaning example one after">
                         <a class="lightbox-close" href="#noanchor"></a>
                     </div>
                 </div>
                 <div class="col-1-of-4">
                     Before
                     <a class="lightbox" href="#image4">
-                        <img src="img/work/oven_cleaning_example_3_before.jpg"/>
+                        <img src="img/work/oven_cleaning_example_3_before.jpg"
+                             alt="Oven cleaning example two before">
                     </a>
-                    <div class="lightbox-target" id="image4">
-                        <img src="img/work/oven_cleaning_example_3_before.jpg">
+                    <div class="lightbox-target" id="image7">
+                        <img src="img/work/oven_cleaning_example_3_before.jpg"
+                             alt="Oven cleaning example two before">
                         <a class="lightbox-close" href="#noanchor"></a>
                     </div>
                 </div>
                 <div class="col-1-of-4">
                     After
                     <a class="lightbox" href="#image5">
-                        <img src="img/work/oven_cleaning_example_3_after.jpg"/>
+                        <img src="img/work/oven_cleaning_example_3_after.jpg"
+                             alt="Oven cleaning example two after">
                     </a>
-                    <div class="lightbox-target" id="image5">
-                        <img src="img/work/oven_cleaning_example_3_after.jpg">
+                    <div class="lightbox-target" id="image8">
+                        <img src="img/work/oven_cleaning_example_3_after.jpg"
+                             alt="Oven cleaning example two after">
                         <a class="lightbox-close" href="#noanchor"></a>
                     </div>
                 </div>
@@ -297,7 +340,16 @@
     <section class="section-testimonials" id="section-testimonials">
         <h1 class="heading-secondary margin-bottom-small">Testimonials</h1>
         <div class="row">
-            
+            <div class="col-1-of-1">
+                <p class="section-testimonials__text" style="color:red;">
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                    Think of something short but interesting to go here! Think of something short but interesting to go here!
+                </p>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-1-of-3">
                 <div class="section-testimonials__container">
                     <div class="section-testimonials__text">
@@ -340,7 +392,7 @@
                                 <img src="img/google_review_icon.png" alt="">
                             </div>
                             <div class="col-3-of-4">
-                                <span class="section-testimonials__review--name">Amanada Field</span>
+                                <span class="section-testimonials__review--name">Amanda Field</span>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -383,50 +435,51 @@
 
     <!-- OUR TEAM SECTION-->
     <section class="section-team" id="section-team">
-        <h1 class="heading-secondary margin-bottom-small">Our Team</h1>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="section-team__container">
-                        <img class="section-team__image" src="img/team_placeholder.jpg" alt="">
-                        <span class="section-team__name">Michaela Neale-Blandford</span>
-                        <span class="section-team__title">Owner / Cleaner</span>
-                        <span class="section-team__description">
+        <h1 class="heading-secondary margin-bottom-small margin-top-tiny">Our Team</h1>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="section-team__container">
+                    <img class="section-team__image" src="img/team_placeholder.jpg" alt="">
+                    <span class="section-team__name">Michaela Neale-Blandford</span>
+                    <span class="section-team__title">Owner / Cleaner</span>
+                    <span class="section-team__description">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type
                             specimen book. It has survived not only five centuries, but also the leap into
                             electronic typesetting, remaining essentially unchanged. It was popularised in
-                            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            the 1960s with the release of sheets containing Lorem Ipsum passages,
                             and more recently with desktop publishing software like Aldus PageMaker including
                             versions of Lorem Ipsum.
                         </span>
-                    </div>
-                </div>
-                <div class="col-1-of-2">
-                    <div class="section-team__container">
-                        <img class="section-team__image" src="img/team_placeholder.jpg" alt="">
-                        <span class="section-team__name">Stephanie Marie</span>
-                        <span class="section-team__title">Owner / Cleaner</span>
-                        <span class="section-team__description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into
-                            electronic typesetting, remaining essentially unchanged. It was popularised in
-                            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including
-                            versions of Lorem Ipsum.
-                        </span>
-                    </div>
                 </div>
             </div>
+            <div class="col-1-of-2">
+                <div class="section-team__container">
+                    <img class="section-team__image" src="img/team_placeholder.jpg" alt="">
+                    <span class="section-team__name">Stephanie Marie</span>
+                    <span class="section-team__title">Owner / Cleaner</span>
+                    <span class="section-team__description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised in
+                            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- CONTACT US SECTION -->
     <section class="section-contact" id="section-contact">
         <h1 class="heading-secondary margin-bottom-small">Contact Us</h1>
         <div class="row">
-            <h3 class="heading-tertiary popup__middle--contact">Fill out the form below or give us a call on 021 0857 7660</h3>
+            <h3 class="heading-tertiary popup__middle--contact">Fill out the form below or give us a call on 021 0857
+                7660</h3>
             <p class="contact-message"></p>
             <form class="email-form">
                 <label for="contact-name">Name</label>
@@ -506,9 +559,9 @@
             <div class="footer__about">
                 <h3 class="footer__header">LSB Cleaning Service - Nelson</h3>
                 <ul class="footer__about--list">
-                    <li class="footer__about--item">Rangiora</li>
-                    <li class="footer__about--item">Christchurch</li>
-                    <li class="footer__about--item">027 504 6792</li>
+                    <li class="footer__about--item">Richmond</li>
+                    <li class="footer__about--item">Nelson</li>
+                    <li class="footer__about--item">021 0857 7660</li>
                     <li class="footer__about--item">Monday - Friday</li>
                     <li class="footer__about--item">8:00am - 5:00pm</li>
                 </ul>
@@ -521,27 +574,6 @@
         <div class="col-4-of-4">Copyright @ lsbcleaning.co.nz. All rights reserved.</div>
     </div>
 </div>
-
-<!--<div class="popup" id="popup">-->
-<!--    <div class="popup__content">-->
-<!--        <div class="popup__close"><a href="#section-tours" class="popup__close-link">&times;</a></div>-->
-<!--        <div class="popup__middle">-->
-<!--            <h2 class="heading-secondary u-margin-bottom-medium">Request a Quote</h2>-->
-<!--            <h3 class="heading-tertiary popup__middle&#45;&#45;contact">or give us a call on 027 504 6792</h3>-->
-<!--            <p class="contact-message"></p>-->
-<!--            <form id="contact-form">-->
-<!--                <input type="hidden" name="contact_number">-->
-<!--                <label>Name</label>-->
-<!--                <input type="text" id="contact-name" name="user_name">-->
-<!--                <label>Email</label>-->
-<!--                <input type="email" id="contact-email" name="user_email">-->
-<!--                <label>Message</label>-->
-<!--                <textarea id="contact-message" name="message"></textarea>-->
-<!--                <input type="submit" value="send">-->
-<!--            </form>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>

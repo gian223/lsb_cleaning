@@ -4,7 +4,8 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$to = 'lsbcleaning@outlook.com';
+// $to = 'lsbcleaning@outlook.com';
+$to = 'gianclarke@hotmail.com';
 $subject = 'LSB Cleaning Website Enquiry';
 $content = "
 <!doctype html>
@@ -72,13 +73,9 @@ $content = "
 </html>
 ";
 
-// Always set content-type when sending HTML email
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-// More headers
-$headers .= 'From: ' . $email . "\r\n";
-
-mail($to,$subject,$content,$headers);
-
+// $headers = "MIME-Version: 1.0" . "\r\n";
+// $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+// $headers .= 'From: ' . $email . "\r\n";
+// mail($to,$subject,$content,$headers);
+return "Yo";
 ?>
