@@ -4,8 +4,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-// $to = 'lsbcleaning@outlook.com';
-$to = 'gianclarke@hotmail.com';
+$to = 'lsbcleaning@outlook.com';
 $subject = 'LSB Cleaning Website Enquiry';
 $content = "
 <!doctype html>
@@ -73,9 +72,8 @@ $content = "
 </html>
 ";
 
-// $headers = "MIME-Version: 1.0" . "\r\n";
-// $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-// $headers .= 'From: ' . $email . "\r\n";
-// mail($to,$subject,$content,$headers);
-return "Yo";
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers .= 'From: ' . $email . "\r\n";
+mail($to,$subject,$content,$headers);
 ?>
